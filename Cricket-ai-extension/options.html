@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matchup Agent Settings</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 24px; background: #0f172a; color: #f8fafc; max-width: 400px; margin: 0 auto; }
+    h2 { color: #fbbf24; text-transform: uppercase; letter-spacing: 0.05em; font-size: 16px; margin-bottom: 16px; border-bottom: 1px solid #334155; padding-bottom: 8px; }
+    label { font-size: 14px; font-weight: bold; }
+    input { width: 100%; padding: 10px; margin-top: 8px; margin-bottom: 16px; border-radius: 4px; border: 1px solid #334155; background: #1e293b; color: #fff; box-sizing: border-box; }
+    button { padding: 10px 16px; background: #38bdf8; color: #0f172a; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; }
+    button:hover { background: #7dd3fc; }
+    #status { margin-top: 12px; color: #4ade80; font-size: 14px; text-align: center; height: 20px; }
+    .help-text { font-size: 12px; color: #94a3b8; margin-top: 24px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h2>Matchup Agent Settings</h2>
+  
+  <label for="apiKey">Google AI Studio API Key</label>
+  <input type="password" id="apiKey" placeholder="Enter your free API key...">
+  
+  <button id="saveBtn">Save Configuration</button>
+  <div id="status"></div>
+  
+  <div class="help-text">
+    To use this extension, you need a free API key from Google AI Studio. This ensures you have your own dedicated rate limits during live matches.
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

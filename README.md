@@ -10,35 +10,4 @@ An AI-powered Chrome Extension that serves as a real-time tactical commentator. 
 * **Cloud-Native Backend:** Powered by a blazing-fast Python/FastAPI server designed for seamless serverless deployment.
 * **Monorepo Structure:** Clean separation of concerns with independent frontend and backend directories.
 
-## Architecture & Tech Stack
 
-This project is built as a monorepo containing two distinct environments:
-
-**1. Frontend (Chrome Extension)**
-* **Tech:** Vanilla JavaScript, HTML5, CSS3
-* **Role:** Injects the UI into YouTube, captures video frames, and handles API communication.
-
-**2. Backend (REST API)**
-* **Tech:** Python, FastAPI, Uvicorn
-* **AI Integration:** Google Gemini API (Multimodal Vision)
-* **Deployment:** Vercel (Serverless Functions)
-
-## 📂 Repository Structure
-
-\`\`\`text
-cricket-tactical-assistant/
-│
-├── cricket-ai-backend/       # Python API server
-│   ├── main.py               # FastAPI application and Gemini logic
-│   ├── requirements.txt      # Python dependencies
-│   └── vercel.json           # Vercel deployment configuration
-│
-└── Cricket-ai-extension/     # Chrome Extension
-    ├── manifest.json         # Extension configuration (v3)
-    ├── content.js            # Video capture and UI injection
-    ├── background.js         # Service worker
-    └── options.html/js       # API key management interface
-\`\`\`
-
-## 👨‍💻 Author
-** Varshith

@@ -152,12 +152,11 @@ function sendFrameToBackend(base64Data) {
 
     try {
       console.log("Sending frame to backend...");
-      const response = await fetch('https://cricket-ai-backend.vercel.app/analyze-frame', {
+      const response = await fetch('https://cricket-tactical-assistant.vercel.app/analyze-frame', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        // Send both the image and the user's API key to your backend
         body: JSON.stringify({ image: base64Data, api_key: apiKey })
-      });
+    });
       
       if (!response.ok) {
         contentDiv.innerHTML = `<span style="color: #f87171;">Server error (${response.status}). Rate limit exceeded or invalid key.</span>`;
